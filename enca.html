@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+body {
+	background-color: #CFF;
+}
+</style>
+</head>
+
+<body>
+FERRETERIA BARRIENTOS 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Vistas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contador-vistas {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contador-vistas">Vistas: 0</div>
+
+    <h1>Bienvenido a la Página</h1>
+    <p>.</p>
+
+    <script>
+        // Comprobamos si ya existe un contador de vistas almacenado en localStorage
+        let vistas = localStorage.getItem('contadorVistas');
+
+        // Si no existe, inicializamos el contador en 0
+        if (!vistas) {
+            vistas = 0;
+        }
+
+        // Incrementamos el contador de vistas
+        vistas++;
+
+        // Guardamos el nuevo valor en localStorage
+        localStorage.setItem('contadorVistas', vistas);
+
+        // Mostramos el contador en el HTML
+        document.getElementById('contador-vistas').textContent = 'Vistas: ' + vistas;
+    </script>
+</body>
+</html>
+
+</body>
+</html>
